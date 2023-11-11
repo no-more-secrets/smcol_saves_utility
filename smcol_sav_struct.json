@@ -286,7 +286,8 @@
             "not met": "00",
             "war": "20",
             "peace": "60",
-            "unknown_rel": "66"
+            "unknown_rel": "66",
+            "unknown_rel2": "64"
         },
 
         "cargo_4bit_type":
