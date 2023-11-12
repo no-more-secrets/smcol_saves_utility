@@ -864,11 +864,11 @@
             {
                 "struct":
                 {
-                    "eu_prc": {"size": 1, "cols": 16, "type": "uint", "no_indent": true},
+                    "euro_price": {"size": 1, "cols": 16, "type": "uint", "no_indent": true},
                     "nr": {"size": 2, "cols": 16, "type": "int", "no_indent": true},
                     "gold": {"size": 4, "cols": 16, "type": "int", "no_indent": true},
-                    "tons": {"size": 4, "cols": 16, "type": "int", "no_indent": true},
-                    "tons2": {"size": 4, "cols": 16, "type": "int", "no_indent": true}
+                    "tons_traded": {"size": 4, "cols": 16, "type": "int", "no_indent": true},
+                    "tons_traded2": {"size": 4, "cols": 16, "type": "int", "no_indent": true}
                 }
             }
         }
@@ -918,7 +918,7 @@
             "muskets": {"size": 1, "type": "uint", "__hint": "not including muskets equipped by braves"},
             "horse_herds": {"size": 1, "type": "uint"},
             "unknown31b": {"size": 5},
-            "tons": {"size": 2, "cols": 16, "type": "int", "no_indent": true},
+            "stock": {"size": 2, "cols": 16, "type": "int", "no_indent": true, "__hint": "stock of each good used for trading. can be negative."},
             "unknown32": {"size": 12},
             "relation_by_nations":
             {
