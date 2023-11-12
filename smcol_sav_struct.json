@@ -558,7 +558,7 @@
             "country_name": {"size": 24, "type": "str"},
             "unknown06": {"size": 1},
             "control": {"size": 1, "type": "control_type"},
-            "founded_colonies": {"size": 1, "type": "uint"},
+            "founded_colonies": {"size": 1, "type": "uint", "__hint": "might be used to pick next colony name"},
             "diplomacy": {"size": 1}
         }
     },
@@ -730,7 +730,7 @@
                 }
             },
             "moves": {"size": 1, "type": "uint", "__hint": "'moves' count already made. One 'move' is one move by road"},
-            "origin_settlement": {"size": 1, "type": "uint", "__hint": "index of COLONY (for colonist) or TRIBE (for brave) where is he from"},
+            "origin_settlement": {"size": 1, "type": "uint", "__hint": "index of COLONY (for colonist) or DWELLING (for brave) where is he from"},
             "unknown16b": {"size": 1},
             "orders": {"size": 1, "type": "orders_type"},
             "goto_x": {"size": 1, "type": "uint"},
@@ -748,6 +748,7 @@
                     "cargo_2": {"size": 4, "type": "cargo_4bit_type"}
                 }
             },
+            "__hint01": "for pioneers, the following field may contain tools count.",
             "cargo_hold": {"size": 1, "cols": 6, "type": "uint", "no_indent": true},
             "turns_worked": {"size": 1, "type": "uint"},
             "profession_or_treasure_amount": {"size": 1, "type": "uint", "__hint": "Can be 'expert farmer' for ships, it's ok. A amount of gold for Treasure units (100's, i.e. 0x32 = 50d = 5000 gold)"},
@@ -808,7 +809,7 @@
             "liberty_bells_total": {"size": 2, "type": "uint"},
             "liberty_bells_last_turn": {"size": 2, "type": "uint"},
             "unknown22": {"size": 2},
-            "next_founding_father": {"size": 2, "type": "uint"},
+            "next_founding_father": {"size": 2, "type": "uint", "__hint": "index of founding father currently in progress."},
             "founding_father_count": {"size": 2, "type": "uint"},
             "prob_founding_father_count_end": {"size": 2},
             "villages_burned": {"size": 1, "type": "uint"},
@@ -867,6 +868,7 @@
                     "euro_price": {"size": 1, "cols": 16, "type": "uint", "no_indent": true},
                     "nr": {"size": 2, "cols": 16, "type": "int", "no_indent": true},
                     "gold": {"size": 4, "cols": 16, "type": "int", "no_indent": true},
+                    "__hint00": "these two appear to mirror each other (need to verify), though one might be for the economics advisor display and another internal.",
                     "tons_traded": {"size": 4, "cols": 16, "type": "int", "no_indent": true},
                     "tons_traded2": {"size": 4, "cols": 16, "type": "int", "no_indent": true}
                 }
@@ -892,7 +894,7 @@
                 }
             },
             "population": {"size": 1, "type": "uint"},
-            "mission": {"size": 1},
+            "mission": {"size": 1, "type": "int", "__hint": "-1 if none. Otherwise nation idx (0,1,2,3)."},
             "unknown28": {"size": 2},
             "last_bought": {"size": 1},
             "last_sold": {"size": 1},
@@ -974,7 +976,7 @@
         {
             "has_unit": {"size": 1, "type": "has_unit_1bit_type"},
             "has_city": {"size": 1, "type": "has_city_1bit_type"},
-            "suppress": {"size": 1, "type": "suppress_1bit_type"},
+            "suppress": {"size": 1, "type": "suppress_1bit_type", "__hint": "one of the bits in here is probably used to indicate that a silver resource is partially depleted (along with the suppress bit)."},
             "road": {"size": 1, "type": "road_1bit_type"},
             "purchased": {"size": 1, "type": "purchased_1bit_type"},
             "pacific": {"size": 1, "type": "pacific_1bit_type"},
@@ -992,7 +994,7 @@
         "bit_struct":
         {
             "region_id": {"size": 4, "type": "region_id_4bit_type"},
-            "visitor_nation": {"size": 4, "type": "nation_4bit_short_type"}
+            "visitor_nation": {"size": 4, "type": "nation_4bit_short_type", "__hint": "these may be used to suppress an LCR that was visited."}
         }
     },
     "SEEN":
@@ -1014,8 +1016,8 @@
     "unknown_map38a": {"size": 18, "count": 14},
     "unknown_map38b": {"size": 18, "count": 14},
     "unknown39a": {"size": 104},
-    "unknown39b": {"size": 3},
-    "prime_resource_seed": {"size": 2},
+    "unknown39b": {"size": 3, "__hint": "some report that this can affect the professions that villages teach, which are likely computed (with some randomness) and not stored. RNG fix causes professions to fluctuate with each visit."},
+    "prime_resource_seed": {"size": 2, "__hint": "these may contain both the prime resource and LCR seeds, possibly in nibbles."},
     "unknown39d": {"size": 1},
     "TRADE_ROUTE":
     {
