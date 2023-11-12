@@ -374,7 +374,7 @@
             "sea": "01"
         }
     },
-    "HEAD":
+    "HEADER":
     {
         "__hint": "This is just a hint or a comment. It doesn't have effect on the SAV decoding",
         "struct":
@@ -428,7 +428,7 @@
             "unknown40": {"size": 1},
             "active_unit": {"size": 2, "type": "uint", "__hint": "index of an active unit in UNITs section"},
             "unknown41": {"size": 6},
-            "tribe_count": {"size": 2, "save_meta": true, "type": "uint", "__hint": "tribes count, saving to meta for later use"},
+            "dwelling_count": {"size": 2, "save_meta": true, "type": "uint", "__hint": "tribes count, saving to meta for later use"},
             "unit_count": {"size": 2, "save_meta": true, "type": "uint", "__hint": "units count, saving to meta for later use"},
             "colony_count": {"size": 2, "save_meta": true, "type": "uint", "__hint": "colonies count, saving to meta for later use"},
             "trade_route_count": {"size": 1, "save_meta": true, "type": "uint", "__hint": "trade routes count, saving to meta for later use"},
@@ -809,9 +809,9 @@
             }
         }
     },
-    "TRIBE":
+    "DWELLING":
     {
-        "count": "tribe_count",
+        "count": "dwelling_count",
         "struct":
         {
             "x, y": {"size": 1, "count": 2, "type": "uint", "no_indent": true},
@@ -843,7 +843,7 @@
             }
         }
     },
-    "INDIAN":
+    "TRIBE":
     {
         "count": 8,
         "struct":
