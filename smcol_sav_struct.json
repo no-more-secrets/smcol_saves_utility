@@ -404,7 +404,7 @@
                 {
                     "unused01": {"size": 7},
                     "tutorial_hints": {"size": 1, "type": "bit_bool"},
-                    "water_color_cycling": {"size": 1, "type": "bit_bool"},
+                    "disable_water_color_cycling": {"size": 1, "type": "bit_bool"},
                     "combat_analysis": {"size": 1, "type": "bit_bool"},
                     "autosave": {"size": 1, "type": "bit_bool"},
                     "end_of_turn": {"size": 1, "type": "bit_bool"},
