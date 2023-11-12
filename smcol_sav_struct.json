@@ -383,7 +383,20 @@
             "unknown00": {"size": 3},
             "map_size_x": {"size": 2, "save_meta": true, "type": "uint"},
             "map_size_y": {"size": 2, "save_meta": true, "type": "uint"},
-            "tut1": {"size": 1, "__hint": "a bit_struct, not important"},
+            "tutorial_help":
+            {
+                "bit_struct":
+                {
+                    "unknown00": {"size": 1, "type": "bit_bool"},
+                    "unknown01": {"size": 1, "type": "bit_bool"},
+                    "unknown02": {"size": 1, "type": "bit_bool"},
+                    "unknown03": {"size": 1, "type": "bit_bool"},
+                    "unknown04": {"size": 1, "type": "bit_bool"},
+                    "unknown05": {"size": 1, "type": "bit_bool"},
+                    "unknown06": {"size": 1, "type": "bit_bool"},
+                    "unknown07": {"size": 1, "type": "bit_bool"}
+                }
+            },
             "unknown03": {"size": 1},
             "game_options":
             {
@@ -418,8 +431,28 @@
                     "unused03": {"size": 6}
                 }
             },
-            "tut2": {"size": 1},
-            "tut3": {"size": 1},
+            "flags":
+            {
+                "bit_struct":
+                {
+                    "how_to_win": {"size": 1, "type": "bit_bool"},
+                    "background_music": {"size": 1, "type": "bit_bool"},
+                    "event_music": {"size": 1, "type": "bit_bool"},
+                    "sound_effects": {"size": 1, "type": "bit_bool"},
+                    "unknown00": {"size": 1, "type": "bit_bool"},
+                    "unknown01": {"size": 1, "type": "bit_bool"},
+                    "unknown02": {"size": 1, "type": "bit_bool"},
+                    "unknown03": {"size": 1, "type": "bit_bool"},
+                    "unknown04": {"size": 1, "type": "bit_bool"},
+                    "unknown05": {"size": 1, "type": "bit_bool"},
+                    "unknown06": {"size": 1, "type": "bit_bool"},
+                    "unknown07": {"size": 1, "type": "bit_bool"},
+                    "unknown08": {"size": 1, "type": "bit_bool"},
+                    "unknown09": {"size": 1, "type": "bit_bool"},
+                    "unknown10": {"size": 1, "type": "bit_bool"},
+                    "unknown11": {"size": 1, "type": "bit_bool"}
+                }
+            },
             "unknown39": {"size": 2},
             "year": {"size": 2, "type": "uint"},
             "season": {"size": 2, "type": "season_type"},
