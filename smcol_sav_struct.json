@@ -823,7 +823,7 @@
             "liberty_bells_total": {"size": 2, "type": "uint"},
             "liberty_bells_last_turn": {"size": 2, "type": "uint"},
             "unknown22": {"size": 2},
-            "next_founding_father": {"size": 2, "type": "uint", "__hint": "index of founding father currently in progress."},
+            "next_founding_father": {"size": 2, "type": "int", "__hint": "index of founding father currently in progress, or -1 if none."},
             "founding_father_count": {"size": 2, "type": "uint"},
             "prob_founding_father_count_end": {"size": 2},
             "villages_burned": {"size": 1, "type": "uint"},
