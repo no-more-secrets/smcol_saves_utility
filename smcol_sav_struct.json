@@ -268,7 +268,7 @@
             "Apache": "09 00",
             "Sioux": "0A 00",
             "Tupi": "0B 00",
-            "None": "FF 00"
+            "None": "FF FF"
         },
 
         "__hint_3": "4 bits-sized nation type",
@@ -492,7 +492,7 @@
             "colony_count": {"size": 2, "save_meta": true, "type": "uint", "__hint": "colonies count, saving to meta for later use"},
             "trade_route_count": {"size": 2, "type": "uint"},
             "show_entire_map": {"size": 2, "type": "uint"},
-            "fixed_nation_map_view": {"size": 2, "type": "int"},
+            "fixed_nation_map_view": {"size": 2, "type": "nation_2byte_type"},
             "difficulty": {"size": 1, "type": "difficulty_type"},
             "unknown43a": {"size": 1},
             "unknown43b": {"size": 1},
