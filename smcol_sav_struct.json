@@ -1025,7 +1025,7 @@
         {
             "has_unit": {"size": 1, "type": "has_unit_1bit_type"},
             "has_city": {"size": 1, "type": "has_city_1bit_type"},
-            "suppress": {"size": 1, "type": "suppress_1bit_type", "__hint": "one of the bits in here is probably used to indicate that a silver resource is partially depleted (along with the suppress bit)."},
+            "suppress": {"size": 1, "type": "suppress_1bit_type", "__hint": "See supplemental info for more information."},
             "road": {"size": 1, "type": "road_1bit_type"},
             "purchased": {"size": 1, "type": "purchased_1bit_type"},
             "pacific": {"size": 1, "type": "pacific_1bit_type"},

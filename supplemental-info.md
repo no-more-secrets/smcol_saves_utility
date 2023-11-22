@@ -115,3 +115,31 @@ cheat mode. Its value only changes when we select Cheat Menu ->
 Reveal Map -> (nation), in which case it will be set to the index
 of that nation. In that situation, each turn, its value will be
 copied into the `curr_nation_map_view` field.
+
+# MASK.suppress
+
+As background, the distribution of prime resources is computed
+dynamically by the game according to a formula that does not
+change throughout the game. Moreover, the location of the re-
+sulting prime resources are not stored in the map data.
+
+However, there are certain cases where the game needs to remove a
+prime resource (or change its strength) from the map. A few exam-
+ples of this are:
+
+  1. Removing fish resources on ocean tiles that are too far from
+     land.
+  2. Removing a prime resource when it has been exhausted (e.g.
+     minerals).
+  3. Diminishing a prime resource after a period of mining it
+     (e.g. silver becomes "depleted silver").
+
+The way the game does each of these is by setting the `suppress`
+bit in that tile's map data. Note that the game does _not_ set
+the suppress bit when a forest is plowed containing a prime re-
+source; this is because forest prime resources are never found on
+the same tile as non-forest prime resources, so the prime re-
+source just goes away by virtue of removing the forest.
+
+Note that Lost City Rumor remove (upon visiting the tile) is
+_not_ handled by this bit.
