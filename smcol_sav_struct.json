@@ -601,8 +601,9 @@
     {
         "struct":
         {
+            "unknown51a": {"size": 18, "__hint": "unexplored"},
             "click_before_open_colony x, y": {"size": 2, "count": 2, "type": "uint", "no_indent": true},
-            "unknown51": {"size": 20, "__hint": "unexplored"}
+            "unknown51b": {"size": 2, "__hint": "unexplored"}
         }
     },    
     "COLONY":
