@@ -444,8 +444,9 @@
                     "show_indian_moves": {"size": 1, "type": "bit_bool"}
                 }
             },
-            "colony_report_options":
+            "colony_report_options_to_disable":
             {
+                "__hint": "Note that 'true' means to disable the given option.",
                 "bit_struct":
                 {
                     "labels_on_cargo_and_terrain": {"size": 1, "type": "bit_bool"},
