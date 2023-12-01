@@ -143,3 +143,15 @@ source just goes away by virtue of removing the forest.
 
 Note that Lost City Rumor remove (upon visiting the tile) is
 _not_ handled by this bit.
+
+# horse_herds / horse_breeding
+
+horse_herds is an abstract quantity representing the rate at
+which horse breeding can happen within the tribe. It increases by
+one each time horses are acquired by the tribe (which can happen
+in various ways). Then, on each turn, the value of horse_breeding
+is increased by the value of horse_herds. When horse_breeding
+gets over 25 then a brave will move back to its dwelling to pick
+up the horses and, when it gets there, it will receive horses and
+25 will be subtracted from horse_breeding. When a dwelling is de-
+stroyed, horse_herds and horse_breeding will decrease.
