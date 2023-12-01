@@ -969,7 +969,7 @@
             "tech": {"size": 1, "type": "tech_type"},
             "unknown31a": {"size": 4},
             "muskets": {"size": 1, "type": "uint", "__hint": "not including muskets equipped by braves"},
-            "horse_herds": {"size": 1, "type": "int"},
+            "horse_herds": {"size": 1, "type": "uint"},
             "unknown31c": {"size": 1},
             "horse_breeding": {"size": 1, "type": "uint"},
             "unknown31d": {"size": 3},
