@@ -932,11 +932,11 @@
         {
             "x, y": {"size": 1, "count": 2, "type": "uint", "no_indent": true},
             "nation_id": {"size": 1, "type": "nation_type"},
-            "ALCS":
+            "BLCS":
             {
                 "bit_struct":
                 {
-                    "artillery_near": {"size": 1, "type": "bit_bool"},
+                    "brave_missing": {"size": 1, "type": "bit_bool"},
                     "learned": {"size": 1, "type": "bit_bool"},
                     "capital": {"size": 1, "type": "bit_bool"},
                     "scouted": {"size": 1, "type": "bit_bool"},
