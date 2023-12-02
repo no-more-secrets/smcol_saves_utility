@@ -973,7 +973,15 @@
         {
             "capitol (x, y)": {"size": 1, "type": "uint", "cols": 2, "no_indent": true},
             "tech": {"size": 1, "type": "tech_type"},
-            "unknown31a": {"size": 4},
+            "tribe_flags":
+            {
+                "bit_struct":
+                {
+                    "unknown01": {"size": 7},
+                    "extinct": {"size": 1, "type": "bit_bool"}
+                }
+            },
+            "unknown31b": {"size": 3},
             "muskets": {"size": 1, "type": "uint", "__hint": "not including muskets equipped by braves"},
             "horse_herds": {"size": 1, "type": "uint"},
             "unknown31c": {"size": 1},
