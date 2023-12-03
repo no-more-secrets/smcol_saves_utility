@@ -155,3 +155,12 @@ gets over 25 then a brave will move back to its dwelling to pick
 up the horses and, when it gets there, it will receive horses and
 25 will be subtracted from horse_breeding. When a dwelling is de-
 stroyed, horse_herds and horse_breeding will decrease.
+
+NOTE: in at least some versions of the game, there appears to be
+a bug whereby only one native tribe is allowed to breed horses.
+When that tribe is wiped out, another starts breeding. Moreover,
+the value of horse_breeding is increased not be horse_herds, but
+instead by horse_herds*NE, where NE is the number of non-extinct
+tribes. Current speculation is that this could be due to a bug in
+the mechanism whereby tribes trade horses with one another (which
+is mentioned in the Official Strategy Guide).
