@@ -985,8 +985,8 @@
             "muskets": {"size": 1, "type": "uint", "__hint": "not including muskets equipped by braves"},
             "horse_herds": {"size": 1, "type": "uint"},
             "unknown31c": {"size": 1},
-            "horse_breeding": {"size": 1, "type": "uint"},
-            "unknown31d": {"size": 3},
+            "horse_breeding": {"size": 2, "type": "uint"},
+            "unknown31d": {"size": 2},
             "stock": {"size": 2, "cols": 16, "type": "int", "no_indent": true, "__hint": "stock of each good used for trading. can be negative."},
             "unknown32": {"size": 12},
             "relation_by_nations":
