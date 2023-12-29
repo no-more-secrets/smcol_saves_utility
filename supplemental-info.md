@@ -165,6 +165,11 @@ tribes. Current speculation is that this could be due to a bug in
 the mechanism whereby tribes trade horses with one another (which
 is mentioned in the Official Strategy Guide).
 
+# ship_counts
+
+Nations' ship counts. Updated at the beginning of each turn. Probably
+used for naval power calculations.
+
 # Sea Lane Connectivity & Land Connectivity
 
 These map sections contain data representing pre-computed pathing
