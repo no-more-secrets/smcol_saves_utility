@@ -1022,9 +1022,95 @@
                     "ship_counts": {"size": 1, "type": "uint", "cols": 4, "no_indent": true, "__hint": "See supplemental-info.md for details"}
                 }
             },
-            "unknown36ac": {"size": 520},
+            "unknown36ac": {"size": 20},
+            "unknown36ad": {"size": 19, "cols": 26},
+            "unknown36ae": {"size": 6},
             "show_colony_prod_quantities": {"size": 1, "type": "yes_no_byte"},
-            "unknown36b": {"size": 4, "count": 38},
+            "unknown_tribe_data_1":
+            {
+                "struct":
+                {
+                    "inca": {"size": 1},
+                    "aztec": {"size": 1},
+                    "arawak": {"size": 1},
+                    "iroquois": {"size": 1},
+                    "cherokee": {"size": 1},
+                    "apache": {"size": 1},
+                    "sioux": {"size": 1},
+                    "tupi": {"size": 1}
+                }
+            },
+            "unknown_tribe_data_2":
+            {
+                "struct":
+                {
+                    "inca": {"size": 1},
+                    "aztec": {"size": 1},
+                    "arawak": {"size": 1},
+                    "iroquois": {"size": 1},
+                    "cherokee": {"size": 1},
+                    "apache": {"size": 1},
+                    "sioux": {"size": 1},
+                    "tupi": {"size": 1}
+                }
+            },
+            "tribe_dwelling_count":
+            {
+                "struct":
+                {
+                    "inca": {"size": 1},
+                    "aztec": {"size": 1},
+                    "arawak": {"size": 1},
+                    "iroquois": {"size": 1},
+                    "cherokee": {"size": 1},
+                    "apache": {"size": 1},
+                    "sioux": {"size": 1},
+                    "tupi": {"size": 1}
+                }
+            },
+            "unknown_tribe_data_4":
+            {
+                "struct":
+                {
+                    "inca": {"size": 1},
+                    "aztec": {"size": 1},
+                    "arawak": {"size": 1},
+                    "iroquois": {"size": 1},
+                    "cherokee": {"size": 1},
+                    "apache": {"size": 1},
+                    "sioux": {"size": 1},
+                    "tupi": {"size": 1}
+                }
+            },
+            "unknown_tribe_data_5":
+            {
+                "struct":
+                {
+                    "inca": {"size": 1},
+                    "aztec": {"size": 1},
+                    "arawak": {"size": 1},
+                    "iroquois": {"size": 1},
+                    "cherokee": {"size": 1},
+                    "apache": {"size": 1},
+                    "sioux": {"size": 1},
+                    "tupi": {"size": 1}
+                }
+            },
+            "unknown_tribe_data_6":
+            {
+                "struct":
+                {
+                    "inca": {"size": 1},
+                    "aztec": {"size": 1},
+                    "arawak": {"size": 1},
+                    "iroquois": {"size": 1},
+                    "cherokee": {"size": 1},
+                    "apache": {"size": 1},
+                    "sioux": {"size": 1},
+                    "tupi": {"size": 1}
+                }
+            },
+            "unknown36b": {"size": 104},
             "x": {"size": 2, "type": "uint", "__hint": "white selector square x"},
             "y": {"size": 2, "type": "uint", "__hint": "white selector square y"},
             "zoom_level": {"size": 1, "type": "uint"},
