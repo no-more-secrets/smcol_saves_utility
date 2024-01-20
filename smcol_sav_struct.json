@@ -1058,14 +1058,14 @@
             {
                 "struct":
                 {
-                    "inca": {"size": 1},
-                    "aztec": {"size": 1},
-                    "arawak": {"size": 1},
-                    "iroquois": {"size": 1},
-                    "cherokee": {"size": 1},
-                    "apache": {"size": 1},
-                    "sioux": {"size": 1},
-                    "tupi": {"size": 1}
+                    "inca": {"size": 1, "type": "uint"},
+                    "aztec": {"size": 1, "type": "uint"},
+                    "arawak": {"size": 1, "type": "uint"},
+                    "iroquois": {"size": 1, "type": "uint"},
+                    "cherokee": {"size": 1, "type": "uint"},
+                    "apache": {"size": 1, "type": "uint"},
+                    "sioux": {"size": 1, "type": "uint"},
+                    "tupi": {"size": 1, "type": "uint"}
                 }
             },
             "unknown_tribe_data_4":
