@@ -1022,9 +1022,8 @@
                     "ship_counts": {"size": 1, "type": "uint", "cols": 4, "no_indent": true, "__hint": "See supplemental-info.md for details"}
                 }
             },
-            "unknown36ac": {"size": 20},
-            "unknown36ad": {"size": 19, "cols": 26},
-            "unknown36ae": {"size": 6},
+            "unknown36ac": {"size": 64, "cols": 8},
+            "unknown36ad": {"size": 8},
             "show_colony_prod_quantities": {"size": 1, "type": "yes_no_byte"},
             "unknown_tribe_data_1":
             {
