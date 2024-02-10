@@ -603,7 +603,7 @@
                 "bit_struct":
                 {
                     "unknown06a": {"size": 7},
-                    "named_new_world": {"size": 1, "type": "bit_bool", "__hint": "the country_name field has been populated."}
+                    "named_new_world": {"size": 1, "type": "bit_bool", "__hint": "the country_name field has been populated; only used for human player."}
                 }
             },
             "control": {"size": 1, "type": "control_type"},
