@@ -989,7 +989,7 @@
                 }
             },
             "unknown31b": {"size": 3},
-            "muskets": {"size": 1, "type": "uint", "__hint": "not including muskets equipped by braves"},
+            "muskets": {"size": 1, "type": "int", "__hint": "not including muskets equipped by braves"},
             "horse_herds": {"size": 1, "type": "uint"},
             "unknown31c": {"size": 1},
             "horse_breeding": {"size": 2, "type": "uint"},
