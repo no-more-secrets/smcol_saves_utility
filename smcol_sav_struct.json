@@ -598,7 +598,14 @@
         {
             "name": {"size": 24, "type": "str"},
             "country_name": {"size": 24, "type": "str"},
-            "unknown06": {"size": 1},
+            "player_flags":
+            {
+                "bit_struct":
+                {
+                    "unknown06a": {"size": 7},
+                    "named_new_world": {"size": 1, "type": "bit_bool", "__hint": "the country_name field has been populated."}
+                }
+            },
             "control": {"size": 1, "type": "control_type"},
             "founded_colonies": {"size": 1, "type": "uint", "__hint": "might be used to pick next colony name"},
             "diplomacy": {"size": 1}
