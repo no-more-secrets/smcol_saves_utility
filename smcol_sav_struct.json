@@ -936,7 +936,7 @@
                 "struct":
                 {
                     "euro_price": {"size": 1, "cols": 16, "type": "uint", "no_indent": true},
-                    "nr":
+                    "intrinsic_volume":
                     {
                         "struct":
                         {
