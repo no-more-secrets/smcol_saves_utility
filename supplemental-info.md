@@ -191,6 +191,19 @@ source just goes away by virtue of removing the forest.
 Note that Lost City Rumor remove (upon visiting the tile) is
 _not_ handled by this bit.
 
+## **STUFF** section
+
+### nation_unit_count
+
+Number of free units the player has, which does not include units
+working in colonies or in missions, but it does include units on
+the dock or ships in transit. *NOTE*: The game does not seem to
+update this correctly when creating units via cheat mode, so you
+may observe inconsistent values when using various cheat fea-
+tures. However, it appears to recompute it (correctly) at the
+start of each new turn, so the inconsistency should only last for
+one turn.
+
 ## **CONNECTIVITY** section
 
 ### Sea Lane Connectivity & Land Connectivity
