@@ -528,7 +528,7 @@
             "colony_count": {"size": 2, "save_meta": true, "type": "uint", "__hint": "colonies count, saving to meta for later use"},
             "trade_route_count": {"size": 2, "type": "uint"},
             "show_entire_map": {"size": 2, "type": "uint"},
-            "fixed_nation_map_view": {"size": 2, "type": "nation_2byte_type"},
+            "fixed_nation_map_view": {"size": 2, "type": "nation_2byte_type", "__hint": "Set only if a specific nation is chosen from the Cheat->Reveal Map menu; otherwise None"},
             "difficulty": {"size": 1, "type": "difficulty_type"},
             "unknown43a": {"size": 1, "__hint": "looks somehow related to tax rate, despite the dedicated tax_rate field that we already have."},
             "unknown43b": {"size": 1},
