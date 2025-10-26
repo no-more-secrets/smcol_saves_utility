@@ -161,6 +161,29 @@ tribes. Current speculation is that this could be due to a bug in
 the mechanism whereby tribes trade horses with one another (which
 is mentioned in the Official Strategy Guide).
 
+## **UNIT** section
+
+### auxiliary_data
+
+What this field holds depends on the unit type and the unit's
+orders:
+
+  * ``Trade Route``: if the unit is on a trade route (which would
+    be either a Wagon Train or a ship, then this is a bit struct:
+    the lower four bits specify which trade route the unit is on
+    (i.e. 0, 1, 2,...), and the upper four bits specify the index
+    of the stop that the unit is en route to. So for example, if
+    the unit is carrying out the third trade route (index=2) and
+    is heading to the fourth stop (index=3) then this field will
+    have the value of (3<<4)+2 = 48+2 = 50.
+
+  * ``Treasure``: if the unit is a Treasure then this will give
+    the amount of gold in 100's, i.e. 0x32 = 50d = 5000 gold.
+
+  * ``Profession``: if the unit is a colonist that may have a
+    profession type then this field contains a `profession_type`
+    for that unit (e.g. "Expert farmer").
+
 ## **MASK** section
 
 ### suppress
